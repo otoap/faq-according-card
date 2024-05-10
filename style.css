@@ -11,12 +11,11 @@ body {
     font-family: "Kumbh Sans", sans-serif;
     display: flex;
     justify-content: center;
-    align-items: start;
-    height: 100vh;
+    align-items: center;
 }
 
 main {
-    margin-top: 148px;
+    margin: 160px 0;
     background-color: #fff;
     padding: 48px 24px 30px 24px;
     display: flex;
@@ -55,6 +54,7 @@ p {
     color: #787887;
     margin-right: 10px;
     margin-top: 13px;
+    display: none;
 }
 
 .bg img {
@@ -74,6 +74,7 @@ p {
     bottom: 0;
     width: 237px;
     top: 0;
+    left: 13%;
 }
 
 h1 {
