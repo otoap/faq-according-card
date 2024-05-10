@@ -13,8 +13,8 @@ console.log(window.getComputedStyle(pArr[2]).display)
 console.log(arrowLi)
 
 
-arrowArr.forEach((arrow, index) => {
-    arrow.addEventListener("click", ()=> {
+arrowLi.forEach((li, index) => {
+    li.addEventListener("click", ()=> {
         if(window.getComputedStyle(p[index]).display !== "none") {
             p[index].style.display = "none"
             arrowLi[index].style.fontWeight = "normal"
@@ -31,7 +31,7 @@ arrowArr.forEach((arrow, index) => {
             element.style.transform = "rotate(0deg)"
         })
 
-        li[index].style.fontWeight = "bold";
+        li.style.fontWeight = "bold";
         p[index].style.display = "block";
         arrowArr[index].style.transform = "rotate(180deg)"
     })

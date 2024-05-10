@@ -81,24 +81,54 @@ h1 {
     margin-top: 84px;
 }
 
+.box {
+    display: none;
+}
+
 @media (min-width:1440px) {
+    body {
+        height: 100vh;
+    }
+
     main {
         width: 920px;
+        height: 509px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
+        padding: 65px 95px 65px;
+
+        background-image: url("./images/illustration-woman-online-desktop.svg"), url("./images/bg-pattern-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: -18% center, 1237% 70%;
     }
 
     h1 {
         grid-column-start: 2;
         margin: 0;
+        align-self: start;
     }
 
     ul {
         grid-column-start: 2;
     }
 
-    .woman {
-        width: 388px;
+    li {
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    picture {
+        display: none;
+    }
+
+    .box {
+        display: block;
+        position: absolute;
+        transform: translate(-92px, 37px);
+    }
+
+    li:hover {
+        color: #f47b56;
     }
 }
