@@ -62,7 +62,7 @@ p {
 }
 
 .woman {
-    transform: translateY(-110px);
+    transform: translate(-120px, -106px);
     width: 237px;
     position: absolute;
     top: 0;
@@ -79,4 +79,26 @@ p {
 
 h1 {
     margin-top: 84px;
+}
+
+@media (min-width:1440px) {
+    main {
+        width: 920px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    h1 {
+        grid-column-start: 2;
+        margin: 0;
+    }
+
+    ul {
+        grid-column-start: 2;
+    }
+
+    .woman {
+        width: 388px;
+    }
 }

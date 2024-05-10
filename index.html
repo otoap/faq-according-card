@@ -9,13 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
-    <title>FAQ according card</title>
     <link rel="icon" href="./images/favicon-32x32.png">
+    <title>FAQ according card</title>
+    <script src="./main.js" defer></script>
 </head>
 <body>
     <main>
-        <img class="woman" src="./images/illustration-woman-online-desktop.svg" alt="woman image">
-        <img class="shadow" src="./images/bg-pattern-mobile.svg" alt="shadow image">
+        <picture>
+            <source media="(min-width:1440px)" srcset="./images/illustration-woman-online-desktop.svg">
+            <img class="woman" src="./images/illustration-woman-online-mobile.svg" alt="woman image">
+        </picture>
+        <picture>
+            <img class="shadow" src="./images/bg-pattern-mobile.svg" alt="shadow image">
+        </picture>
 
         <h1>FAQ</h1>
         <ul>
@@ -40,7 +46,7 @@
             <hr>
             <li>
                 Can I cancel my subscription?
-                <img class="arro" src="./images/icon-arrow-down.svg" alt="arrow photo">
+                <img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow photo">
             </li>
             <p>Sure.</p>
             <hr>
