@@ -18,6 +18,8 @@ arrowLi.forEach((li, index) => {
         if(window.getComputedStyle(p[index]).display !== "none") {
             p[index].style.display = "none"
             arrowLi[index].style.fontWeight = "normal"
+            arrowArr[index].style.transform = "rotate(0deg)"
+            return
         }
 
 
